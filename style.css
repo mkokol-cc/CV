@@ -32,6 +32,15 @@ body{
 
 .skill-img-container{
     height: fit-content;
+    cursor: pointer;
+    border: none !important;
+}
+
+.skill-img-container:hover > .card-img-top{
+    filter: drop-shadow(-2px 2px 15px rgba(0, 0, 0, 0.7));
+}
+.skill-img-container:hover > .card-body input{
+    color: #35F;
 }
 
 .skill-img-container img{
@@ -52,4 +61,51 @@ body{
     height: 50px;
     position: static !important;
     display: inline-block !important;
+}
+
+.card-body input{
+    background-color: #0000;
+    color: #0000;
+}
+
+.img-success-modal{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    top: 7%;
+}
+.img-success-modal img{
+    height: max(10vw, 170px);
+    width:  max(10vw, 170px);
+    filter: drop-shadow(-2px 2px 15px rgba(0, 0, 0, 0.7));
+}
+
+
+#success-btn-modal{
+    background-color: #39b54a;
+    border-color: #39b54a;
+    color: #fff;
+    border-radius: 3rem;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#modalSuccessMessage .modal-dialog .modal-content .modal-header{
+    height: 60px;
+    border-bottom: none;
+}
+#modalSuccessMessage .modal-dialog .modal-content .modal-footer{
+    border-top: none;
+}
+#modalSuccessMessage .modal-dialog .modal-content{border: 1px solid rgba(0,0,0);}
+
+#send-btn{
+    border-radius: 4rem;
+    padding: 8px 20px;
+    font-size: 17px;
+}
+
+#accordionExample .accordion-item{    
+    background: 0000;
+    border: 0px;
 }
