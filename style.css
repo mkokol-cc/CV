@@ -1,6 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap');
+
+body{
+    font-family: 'Raleway', sans-serif !important;
+}
+
 #header{
     height: 70%;
     background-color: #F33;
+    background-image: url(img-header2.jpg);
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+#header .col{
+    height: 100%;
+}
+
+#div-img-header{
+    text-align: end;
 }
 
 #grid-about-me{
@@ -16,5 +34,22 @@
     height: fit-content;
 }
 
-.skill-item{
+.skill-img-container img{
+    object-fit: contain;
+}
+
+.project-preview{
+    height: 75vh;
+}
+
+.carousel-inner{
+    overflow-y: scroll !important;
+    padding-right: 0;
+    height: 90%;
+}
+
+.carousel-project-1-btn{
+    height: 50px;
+    position: static !important;
+    display: inline-block !important;
 }
