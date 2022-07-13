@@ -23,43 +23,89 @@
                         <p id="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis veritatis recusandae expedita inventore, doloremque aperiam quidem odit voluptates aliquam impedit, nemo ut cupiditate enim quis alias minima maiores libero corporis.</p>
                     </div>
                 </div>
-                <input type="button" value="Leer más">
+
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. At cupiditate officia debitis tempore aliquid eaque, ratione reprehenderit delectus amet facere cumque rerum quo laborum suscipit? Perspiciatis aliquid corporis illum odio?
+                            </div>
+                        </div>
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Leer más
+                            </button>
+                        </h2>
+                    </div>  
+                </div>
             </div>
         </div>
         <div id="skills" class="container-fluid container text-center">
             <h3>mis habilidades.</h3>
-            <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3 justify-content-center" id="skills-grid-container">
+            <div class="row row-cols-2 row-cols-lg-6 g-2 g-lg-3 justify-content-center" id="skills-grid-container">
                 <div id="py" class="col skill-item">
-                    <div class="skill-img-container"><img src="" alt=""></div>
-                    <label for="" class="skill-title"></label>
+                    <div class="skill-img-container card w-100">
+                        <img class="card-img-top w-100" src="python.png" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title skill-title">Python</h4>
+                        </div>
+                    </div>
                 </div>
-                <div id="py" class="col skill-item">
-                    <div class="skill-img-container"><img src="" alt=""></div>
-                    <label for="" class="skill-title"></label>
+                <div id="java" class="col skill-item">
+                    <div class="skill-img-container card w-100">
+                        <img class="card-img-top w-100" src="java.png" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title skill-title">Java</h4>
+                        </div>
+                    </div>
                 </div>
-                <div id="py" class="col skill-item">
-                    <div class="skill-img-container"><img src="" alt=""></div>
-                    <label for="" class="skill-title"></label>
+                <div id="vb" class="col skill-item">
+                    <div class="skill-img-container card w-100">
+                        <img class="card-img-top w-100" src="vbnet.png" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title skill-title">VB.NET</h4>
+                        </div>
+                    </div>
                 </div>
-                <div id="py" class="col skill-item">
-                    <div class="skill-img-container"><img src="" alt=""></div>
-                    <label for="" class="skill-title"></label>
+                <div id="php" class="col skill-item">
+                    <div class="skill-img-container card w-100">
+                        <img class="card-img-top w-100" src="php.png" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title skill-title">PHP</h4>
+                        </div>
+                    </div>
                 </div>
-                <div id="py" class="col skill-item">
-                    <div class="skill-img-container"><img src="" alt=""></div>
-                    <label for="" class="skill-title"></label>
+                <div id="mysql" class="col skill-item">
+                    <div class="skill-img-container card w-100">
+                        <img class="card-img-top w-100" src="mysql.png" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title skill-title">MySQL</h4>
+                        </div>
+                    </div>
                 </div>
-                <div id="py" class="col skill-item">
-                    <div class="skill-img-container"><img src="" alt=""></div>
-                    <label for="" class="skill-title"></label>
+                <div id="js" class="col skill-item">
+                    <div class="skill-img-container card w-100">
+                        <img class="card-img-top w-100" src="js.png" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title skill-title">JavaScript</h4>
+                        </div>
+                    </div>
                 </div>
-                <div id="py" class="col skill-item">
-                    <div class="skill-img-container"><img src="" alt=""></div>
-                    <label for="" class="skill-title"></label>
+                <div id="html" class="col skill-item">
+                    <div class="skill-img-container card w-100">
+                        <img class="card-img-top w-100" src="html.png" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title skill-title">HTML</h4>
+                        </div>
+                    </div>
                 </div>
-                <div id="py" class="col skill-item">
-                    <div class="skill-img-container"><img src="" alt=""></div>
-                    <label for="" class="skill-title"></label>
+                <div id="css" class="col skill-item">
+                    <div class="skill-img-container card w-100">
+                        <img class="card-img-top w-100" src="css.png" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title skill-title">CSS</h4>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -78,6 +124,7 @@
             <h3></h3>
             <p>contacto.</p>
             <form action="" id="form-contact">
+                <input type="text">
                 <input type="text">
                 <input type="submit" value="Enviar">
             </form>
