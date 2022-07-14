@@ -29,14 +29,15 @@ body{
 #skills-grid-container{
     margin: auto;
 }
-
 .skill-img-container{
-    height: fit-content;
-    cursor: pointer;
     border: none !important;
+    height: fit-content;
+}
+.skill-item .skill-img-container{
+    cursor: pointer;
 }
 
-.skill-img-container:hover > .card-img-top{
+.skill-item .skill-img-container:hover > .card-img-top{
     filter: drop-shadow(-2px 2px 15px rgba(0, 0, 0, 0.7));
 }
 .skill-img-container:hover > .card-body input{
