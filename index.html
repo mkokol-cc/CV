@@ -3,8 +3,18 @@
     <head>
         <title>BIENVENIDO</title>
         <link href="style.css" rel="stylesheet">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="script.js"></script>
+        <script>
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                return new bootstrap.Tooltip(tooltipTriggerEl)
+            })
+        </script>
     </head>
     <body>
         <div id="header" class="container-fluid text-center row">
@@ -34,7 +44,7 @@
                             </div>
                         </div>
                         <h2 class="accordion-header" id="headingThree">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <button class="accordion-button collapsed m-auto w-auto" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                                 Leer más
                             </button>
                         </h2>
@@ -46,66 +56,290 @@
             <h3>mis habilidades.</h3>
             <div class="row row-cols-3 row-cols-lg-5 g-2 g-lg-3 justify-content-center" id="skills-grid-container">
                 <div id="py" class="col skill-item">
-                    <div class="skill-img-container card w-100">
+                    <div class="skill-img-container card w-100" data-bs-toggle="modal" data-bs-target="#modalPy">
                         <img class="card-img-top w-100" src="python.png" alt="">
                         <div class="card-body">
                             <h4 class="card-title skill-title">Python</h4>
+                            <input type="button" value="ver más" class="btn">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="modalPy" tabindex="-1" aria-labelledby="ModalPyLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body fluid-container row">
+                                <div class="col-4">
+                                    <div class="skill-img-container card w-100">
+                                        <img class="card-img-top w-100" src="python.png" alt="">
+                                        <div class="card-body">
+                                            <h4 class="card-title skill-title">Python</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <!--
+                                        descripcion
+                                    -->
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div id="java" class="col skill-item">
-                    <div class="skill-img-container card w-100">
+                    <div class="skill-img-container card w-100" data-bs-toggle="modal" data-bs-target="#modalJava">
                         <img class="card-img-top w-100" src="java.png" alt="">
                         <div class="card-body">
                             <h4 class="card-title skill-title">Java</h4>
+                            <input type="button" value="ver más" class="btn">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="modalJava" tabindex="-1" aria-labelledby="ModalJavaLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body fluid-container row">
+                                <div class="col-4">
+                                    <div class="skill-img-container card w-100">
+                                        <img class="card-img-top w-100" src="java.png" alt="">
+                                        <div class="card-body">
+                                            <h4 class="card-title skill-title">Java</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <!--
+                                        descripcion
+                                    -->
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div id="vb" class="col skill-item">
-                    <div class="skill-img-container card w-100">
+                    <div class="skill-img-container card w-100" data-bs-toggle="modal" data-bs-target="#modalVb">
                         <img class="card-img-top w-100" src="vbnet.png" alt="">
                         <div class="card-body">
                             <h4 class="card-title skill-title">VB.NET</h4>
+                            <input type="button" value="ver más" class="btn">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="modalVb" tabindex="-1" aria-labelledby="ModalVbLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body fluid-container row">
+                                <div class="col-4">
+                                    <div class="skill-img-container card w-100">
+                                        <img class="card-img-top w-100" src="vbnet.png" alt="">
+                                        <div class="card-body">
+                                            <h4 class="card-title skill-title">VB.NET</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <!--
+                                        descripcion
+                                    -->
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div id="php" class="col skill-item">
-                    <div class="skill-img-container card w-100">
+                    <div class="skill-img-container card w-100" data-bs-toggle="modal" data-bs-target="#modalPhp">
                         <img class="card-img-top w-100" src="php.png" alt="">
                         <div class="card-body">
                             <h4 class="card-title skill-title">PHP</h4>
+                            <input type="button" value="ver más" class="btn">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="modalPhp" tabindex="-1" aria-labelledby="ModalPhpLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body fluid-container row">
+                                <div class="col-4">
+                                    <div class="skill-img-container card w-100">
+                                        <img class="card-img-top w-100" src="php.png" alt="">
+                                        <div class="card-body">
+                                            <h4 class="card-title skill-title">PHP</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <!--
+                                        descripcion
+                                    -->
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div id="mysql" class="col skill-item">
-                    <div class="skill-img-container card w-100">
+                    <div class="skill-img-container card w-100" data-bs-toggle="modal" data-bs-target="#modalMysql">
                         <img class="card-img-top w-100" src="mysql.png" alt="">
                         <div class="card-body">
                             <h4 class="card-title skill-title">MySQL</h4>
+                            <input type="button" value="ver más" class="btn">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="modalMysql" tabindex="-1" aria-labelledby="ModalMysqlLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body fluid-container row">
+                                <div class="col-4">
+                                    <div class="skill-img-container card w-100">
+                                        <img class="card-img-top w-100" src="mysql.png" alt="">
+                                        <div class="card-body">
+                                            <h4 class="card-title skill-title">MySQL</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <!--
+                                        descripcion
+                                    -->
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div id="js" class="col skill-item">
-                    <div class="skill-img-container card w-100">
+                    <div class="skill-img-container card w-100" data-bs-toggle="modal" data-bs-target="#modalJs">
                         <img class="card-img-top w-100" src="js.png" alt="">
                         <div class="card-body">
                             <h4 class="card-title skill-title">JavaScript</h4>
+                            <input type="button" value="ver más" class="btn">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="modalJs" tabindex="-1" aria-labelledby="ModalJsLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body fluid-container row">
+                                <div class="col-4">
+                                    <div class="skill-img-container card w-100">
+                                        <img class="card-img-top w-100" src="js.png" alt="">
+                                        <div class="card-body">
+                                            <h4 class="card-title skill-title">JavaScript</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <!--
+                                        descripcion
+                                    -->
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div id="html" class="col skill-item">
-                    <div class="skill-img-container card w-100">
+                    <div class="skill-img-container card w-100" data-bs-toggle="modal" data-bs-target="#modalHtml">
                         <img class="card-img-top w-100" src="html.png" alt="">
                         <div class="card-body">
                             <h4 class="card-title skill-title">HTML</h4>
+                            <input type="button" value="ver más" class="btn">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="modalHtml" tabindex="-1" aria-labelledby="ModalHtmlLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body fluid-container row">
+                                <div class="col-4">
+                                    <div class="skill-img-container card w-100">
+                                        <img class="card-img-top w-100" src="html.png" alt="">
+                                        <div class="card-body">
+                                            <h4 class="card-title skill-title">HTML</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <!--
+                                        descripcion
+                                    -->
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div id="css" class="col skill-item">
-                    <div class="skill-img-container card w-100">
+                    <div class="skill-img-container card w-100" data-bs-toggle="modal" data-bs-target="#modalCss">
                         <img class="card-img-top w-100" src="css.png" alt="">
                         <div class="card-body">
                             <h4 class="card-title skill-title">CSS</h4>
+                            <input type="button" value="ver más" class="btn">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="modalCss" tabindex="-1" aria-labelledby="ModalCssLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body fluid-container row">
+                                <div class="col-4">
+                                    <div class="skill-img-container card w-100">
+                                        <img class="card-img-top w-100" src="css.png" alt="">
+                                        <div class="card-body">
+                                            <h4 class="card-title skill-title">CSS</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <!--
+                                        descasdripcion
+                                    -->
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -181,10 +415,29 @@
         <div id="contact" class="container-fluid text-center">
             <h3>CONTACTAME</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, quis illum ea dicta perspiciatis assumenda nemo aut reprehenderit, deserunt nam nihil similique mollitia nulla, placeat officiis dignissimos incidunt suscipit recusandae!</p>
-            <form action="" id="form-contact">
+            <form action="contact.php" method="post" id="form-contact">
                 <input type="text" class="form-control" id="contact" name="contact-text">
                 <textarea type="text" class="form-control" rows="5" id="message" name="message-text"></textarea>
-                <input type="submit" value="Enviar">
+                <input id="send-btn" type="button" value="Enviar" data-bs-toggle="modal" data-bs-target="#modalSuccessMessage">
+                <div class="modal fade" id="modalSuccessMessage" tabindex="-1" aria-labelledby="ModalSuccessMessageLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="img-success-modal">
+                            <img src="success.png" alt="" class="rounded">
+                        </div>
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            </div>
+                            <div class="modal-body">
+                                <h4>¡Gracias por comunicarte!</h4>
+                                <p>Tu mensaje a sido enviado con éxito y recibiras mi respuesta pronto, por favor revisa tu correo electronico</p>
+                                <h6>Muchas gracias...</h6>
+                            </div>
+                            <div class="modal-footer d-block">
+                                <button type="button" id="success-btn-modal" class="btn" data-bs-dismiss="modal">Aceptar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </form>
         </div>
     </body>
