@@ -17,34 +17,69 @@
         </script>
     </head>
     <body>
-        <div id="header" class="container-fluid text-center row">
-            <div class="col" id="header-description">
-                <h1>Mi CV (Presentacion)</h1>
-            </div>
-            <div class="col" id="div-img-header">
-                <img class="h-100" src="descarga.png" alt="personal-photo">
+        <div id="header" class="container-fluid text-center row justify-content-center align-items-end">
+            <hr id="hr-head">
+            <div id="image-profile" class="rounded">
+                <img class="rounded h-100 w-100" src="profile.png" alt="">
             </div>
         </div>
         <div id="about-me" class="container-fluid text-center">
-            <div class="grid-container text-center mt-4 p-5 bg-primary rounded" id="grid-about-me">
-                <div class="row">
-                    <div class="col-3">
-                        <h3>Sobre mi</h3>
-                    </div>
-                    <div class="col-9">
-                        <p id="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis veritatis recusandae expedita inventore, doloremque aperiam quidem odit voluptates aliquam impedit, nemo ut cupiditate enim quis alias minima maiores libero corporis.</p>
-                    </div>
+            <div class="grid-container text-center mt-4 p-5" id="grid-about-me">
+                <h2>PROGRAMADOR Y DESARROLLADOR WEB FULL-STACK</h2>
+                <div class="row g-2 justify-content-center" id="social-div">
+                    <a href="" class="justify-content-center col-2" id="card1-link"><div class="m-auto social-card" id="social-card1"></div></a>
+                    <a href="" class="justify-content-center col-2" id="card2-link"><div class="m-auto social-card" id="social-card2"></div></a>
+                    <a href="" class="justify-content-center col-2" id="card3-link"><div class="m-auto social-card" id="social-card3"></div></a>
+                    <a href="" class="justify-content-center col-2" id="card4-link"><div class="m-auto social-card" id="social-card4"></div></a>
                 </div>
-
                 <div class="accordion" id="accordionExample">
                     <div class="accordion-item">
                         <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. At cupiditate officia debitis tempore aliquid eaque, ratione reprehenderit delectus amet facere cumque rerum quo laborum suscipit? Perspiciatis aliquid corporis illum odio?
+                                <div class="row">
+                                    <div class="col-3">
+                                        <h3>Sobre mi</h3>
+                                    </div>
+                                    <div class="col-9">
+                                        <p id="description">
+                                            estudiante avanzado de ing en sistemas apasionado y 
+                                            ambicioso por la programacion, autodidacta y con 
+                                            conocimientos en múltiples lenguajes de programación 
+                                            para el desarrollo tanto de aplicaciones web
+                                            como aplicaciones desktop y en la planificacion y
+                                            gestion de procesos de desarrollo de software
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-3">
+                                        <h3>Habilidades</h3>
+                                    </div>
+                                    <div class="col-9">
+                                        <ul id="description">
+                                            <li>- SEO para posicionamiento web</li>
+                                            tecnicas enfocadas en optimizar un sitio web con el fin de mejorar su posicionamiento en la 
+                                            lista de resultados de los buscadores de internet.
+                                            <li>- Gestión de sitios web y hosting.</li>
+                                            Alojamiento del sitio web con su administracion, configuraciones y manejo de sus bases de datos
+                                            y aplicaciones necesarias para su correcto funcionamiento.
+                                            <li>- Gestión de proyectos con GIT</li>
+                                            manejo del software GIT para el control de versiones de un proyecto, apoyo en el seguimiento de los cambios de código y
+                                            llevar registro de los cambios para coordinar el trabajo entre varias personas
+                                            <li>- Creación de página web con WordPress - wordpress para e-commerce</li>
+                                            utilizacion de la herramienta WordPress para realizar sitios optimizados para SEO, con diseños atractivos y adaptacion a distintos dispositivos
+                                            y uso de plugins como WooCommerce para sitios e-commerce.
+                                            <li>- Programación Orientada a Objetos (POO)</li>
+                                            Aplicacion del paradigma orientado a objetos para la realizacion de un codigo organizado, flexible ante los cambios y facilitar su reutilizazcion
+                                            <li>- Patrones de diseño y análisis de software</li>
+                                            Uso de soluciones probadas a problemas comunes relacionados al diseño y analisis para lograr un software solido y menos propenso a errores
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <h2 class="accordion-header" id="headingThree">
-                            <button class="accordion-button collapsed m-auto w-auto" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <button class="accordion-button collapsed m-auto w-auto focus-none" id="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                                 Leer más
                             </button>
                         </h2>
@@ -52,15 +87,16 @@
                 </div>
             </div>
         </div>
-        <div id="skills" class="container-fluid container text-center">
-            <h3>mis habilidades.</h3>
+        <div id="skills" class="container-fluid container text-center pad2">
+            <div id="skills-title">
+            </div>
             <div class="row row-cols-3 row-cols-lg-5 g-2 g-lg-3 justify-content-center" id="skills-grid-container">
                 <div id="py" class="col skill-item">
                     <div class="skill-img-container card w-100" data-bs-toggle="modal" data-bs-target="#modalPy">
                         <img class="card-img-top w-100" src="python.png" alt="">
                         <div class="card-body">
                             <h4 class="card-title skill-title">Python</h4>
-                            <input type="button" value="ver más" class="btn">
+                            <input type="button" value="ver más" class="btn focus-none">
                         </div>
                     </div>
                 </div>
@@ -80,9 +116,14 @@
                                     </div>
                                 </div>
                                 <div class="col-8">
-                                    <!--
-                                        descripcion
-                                    -->
+                                    Python es un lenguaje popular de programación de alto nivel, orientado
+                                    a objetos, usado para el desarrollo web y de aplicaciones informáticas, 
+                                    ciencia de datos, aprendizaje automático, análisis y automatización de 
+                                    datos e Inteligencia artificial. soporta el uso de módulos
+                                    y paquetes para un código puede ser reutilizado en varios proyectos.
+                                    es un lenguaje de programación flexible con librerías, las cuales son 
+                                    conjunto de implementaciones funcionales que ofrecen una interfaz bien 
+                                    definida para la funcionalidad que se invoca. 
                                 </div>
                             </div>
                             <div class="modal-footer">
@@ -96,7 +137,7 @@
                         <img class="card-img-top w-100" src="java.png" alt="">
                         <div class="card-body">
                             <h4 class="card-title skill-title">Java</h4>
-                            <input type="button" value="ver más" class="btn">
+                            <input type="button" value="ver más" class="btn focus-none">
                         </div>
                     </div>
                 </div>
@@ -116,9 +157,13 @@
                                     </div>
                                 </div>
                                 <div class="col-8">
-                                    <!--
-                                        descripcion
-                                    -->
+                                    Java se utiliza para desarrollar aplicaciones móviles, aplicaciones web, 
+                                    aplicaciones de escritorio, juegos y mucho más. Java es un lenguaje que 
+                                    funciona en diferentes plataformas (Windows, Mac, Linux, Raspberry Pi, etc.),
+                                    seguro, rápido y potente. Tiene un gran apoyo de la comunidad (decenas de 
+                                    millones de desarrolladores). Java es un lenguaje orientado a objetos que 
+                                    proporciona una estructura clara a los programas y permite reutilizar el código,
+                                    lo que reduce los costos y tiempos de desarrollo.
                                 </div>
                             </div>
                             <div class="modal-footer">
@@ -132,7 +177,7 @@
                         <img class="card-img-top w-100" src="vbnet.png" alt="">
                         <div class="card-body">
                             <h4 class="card-title skill-title">VB.NET</h4>
-                            <input type="button" value="ver más" class="btn">
+                            <input type="button" value="ver más" class="btn focus-none">
                         </div>
                     </div>
                 </div>
@@ -152,9 +197,13 @@
                                     </div>
                                 </div>
                                 <div class="col-8">
-                                    <!--
-                                        descripcion
-                                    -->
+                                    Visual Basic .NET (también llamado VB.NET) es un lenguaje de programación orientado a 
+                                    objetos desarrollado por Microsoft. Su uso agiliza y simplifica la creación de 
+                                    aplicaciones .NET, este lenguaje permite crear aplicaciones de escritorio, Web y 
+                                    móviles. Brinda un completo número de características para hacer que el desarrollo 
+                                    de aplicaciones sea realmente rápido. proporciona el entorno de ejecución
+                                    Common Language Runtime (CLR), el cual hace posible aplicaciones sólidas, estables 
+                                    , seguras y mas rapidas ya que libera recursos y se encarga de administrar la memoria.
                                 </div>
                             </div>
                             <div class="modal-footer">
@@ -168,7 +217,7 @@
                         <img class="card-img-top w-100" src="php.png" alt="">
                         <div class="card-body">
                             <h4 class="card-title skill-title">PHP</h4>
-                            <input type="button" value="ver más" class="btn">
+                            <input type="button" value="ver más" class="btn focus-none">
                         </div>
                     </div>
                 </div>
@@ -188,9 +237,14 @@
                                     </div>
                                 </div>
                                 <div class="col-8">
-                                    <!--
-                                        descripcion
-                                    -->
+                                    PHP es un lenguaje de secuencias de comandos de servidor y una poderosa herramienta 
+                                    para crear páginas web dinámicas e interactivas. está centrado en la programación de 
+                                    scripts del lado del servidor. Puede generar contenido de página dinámico, puede 
+                                    recopilar datos de formulario, puede administrar datos en su base de datos
+                                    Se ejecuta en varias plataformas (Windows, Linux, Unix, Mac OS X, etc.), es compatible
+                                    con casi todos los servidores que se utilizan hoy en día y soporta una amplia gama 
+                                    de bases de datos. WordPress, el sistema de administración de contenido más popular 
+                                    está hecho con el lenguaje de programación PHP
                                 </div>
                             </div>
                             <div class="modal-footer">
@@ -204,7 +258,7 @@
                         <img class="card-img-top w-100" src="mysql.png" alt="">
                         <div class="card-body">
                             <h4 class="card-title skill-title">MySQL</h4>
-                            <input type="button" value="ver más" class="btn">
+                            <input type="button" value="ver más" class="btn focus-none">
                         </div>
                     </div>
                 </div>
@@ -224,9 +278,12 @@
                                     </div>
                                 </div>
                                 <div class="col-8">
-                                    <!--
-                                        descripcion
-                                    -->
+                                    MySQL es un sistema de gestión de bases de datos relacional lo que le permite tener 
+                                    mayor velocidad y flexibilidad, es de las más populares para entornos de desarrollo 
+                                    web como WordPress, su popularidad como aplicación web está muy ligada a PHP, Grandes 
+                                    sitios web como Facebook, Twitter, etc. utilizan MySQL, las bases de datos en MySQL 
+                                    son muy rápidas, Utilizan varias capas de seguridad, necesitan pocos recursos de CPU
+                                    o RAM y son compatibles con Linux y Windows.
                                 </div>
                             </div>
                             <div class="modal-footer">
@@ -240,7 +297,7 @@
                         <img class="card-img-top w-100" src="js.png" alt="">
                         <div class="card-body">
                             <h4 class="card-title skill-title">JavaScript</h4>
-                            <input type="button" value="ver más" class="btn">
+                            <input type="button" value="ver más" class="btn focus-none">
                         </div>
                     </div>
                 </div>
@@ -260,9 +317,13 @@
                                     </div>
                                 </div>
                                 <div class="col-8">
-                                    <!--
-                                        descripcion
-                                    -->
+                                    JavaScript es un lenguaje de programación web muy popular, se utiliza principalmente 
+                                    del lado del cliente, implementado como parte de un navegador web permitiendo mejoras 
+                                    en la interfaz de usuario y páginas web dinámica. Es uno de los 3 lenguajes fundamentales 
+                                    para el desarrollo web junto a HTML y CSS, JavaScript se utiliza para programar el 
+                                    comportamiento de las páginas web, todos los navegadores modernos interpretan el código 
+                                    JavaScript integrado en las páginas web. junto con ayuda de otras tecnologías como AJAX 
+                                    puede utilizarse para enviar y recibir información del servidor 
                                 </div>
                             </div>
                             <div class="modal-footer">
@@ -276,7 +337,7 @@
                         <img class="card-img-top w-100" src="html.png" alt="">
                         <div class="card-body">
                             <h4 class="card-title skill-title">HTML</h4>
-                            <input type="button" value="ver más" class="btn">
+                            <input type="button" value="ver más" class="btn focus-none">
                         </div>
                     </div>
                 </div>
@@ -296,9 +357,12 @@
                                     </div>
                                 </div>
                                 <div class="col-8">
-                                    <!--
-                                        descripcion
-                                    -->
+                                    HTML es el lenguaje de marcado estándar para crear sitios web, es el componente más básico 
+                                    de la Web, su proposito es describir la estructura de una página Web a travez de una 
+                                    serie de elementos. La funcion de un navegador web es leer documentos HTML y mostrarlos 
+                                    correctamente.Este lenguaje nos ofrece una gran adaptabilidad, una estructuración lógica y 
+                                    es fácil de interpretar. generalmente se utilizan otras tecnologías para describir la 
+                                    presentación de una página web como CSS o la funcionalidad y comportamiento con JavaScript
                                 </div>
                             </div>
                             <div class="modal-footer">
@@ -312,7 +376,7 @@
                         <img class="card-img-top w-100" src="css.png" alt="">
                         <div class="card-body">
                             <h4 class="card-title skill-title">CSS</h4>
-                            <input type="button" value="ver más" class="btn">
+                            <input type="button" value="ver más" class="btn focus-none">
                         </div>
                     </div>
                 </div>
@@ -332,9 +396,13 @@
                                     </div>
                                 </div>
                                 <div class="col-8">
-                                    <!--
-                                        descasdripcion
-                                    -->
+                                    es el lenguaje que usamos para diseñar un documento HTML, CSS describe cómo se deben ser 
+                                    renderizados los elementos de HTML en la pantalla, CSS ahorra mucho trabajo, puede controlar 
+                                    el diseño de varias páginas web a la vez. Su funcion es definir estilos para sus páginas web, 
+                                    incluido el diseño, el diseño y las variaciones en la visualización para diferentes dispositivos 
+                                    y tamaños de pantalla. CSS es utilizado por Bootstrap, que es un framework front-end utilizado 
+                                    para desarrollar aplicaciones web y sitios mobile first, o sea, con un layout que se adapta a 
+                                    la pantalla del dispositivo utilizado por el usuario.
                                 </div>
                             </div>
                             <div class="modal-footer">
@@ -346,8 +414,9 @@
             </div>
         </div>
         <div id="projects" class="container-fluid text-center">
-            <h3>mis proyectos.</h3>
-            <div id="project-1" class="project-item grid-container text-center mt-4 p-5 bg-primary rounded row">
+            <div id="projects-title">
+            </div>
+            <div id="project-1" class="project-item grid-container text-center mt-4 p-5 row">
                 <div id="carousel-project-1" class="project-preview col carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
