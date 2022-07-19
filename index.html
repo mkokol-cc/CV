@@ -481,12 +481,46 @@
                 </div>
             </div>
         </div>
-        <div id="contact" class="container-fluid text-center">
-            <h3>CONTACTAME</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, quis illum ea dicta perspiciatis assumenda nemo aut reprehenderit, deserunt nam nihil similique mollitia nulla, placeat officiis dignissimos incidunt suscipit recusandae!</p>
-            <form action="contact.php" method="post" id="form-contact">
-                <input type="text" class="form-control" id="contact" name="contact-text">
-                <textarea type="text" class="form-control" rows="5" id="message" name="message-text"></textarea>
+
+
+        <div id="contact">
+            <div id="contact-title">
+            </div>
+            <div class="paper">
+                <form class="paper-content">
+                    <label>MAIL DE CONTACTO: </label><input type="text" id="contact-mail" name="contact-text" placeholder="TU MAIL AQUI...">
+                    <label id="msg-lbl">MENSAJE: </label><textarea type="text" rows="6" id="message" name="message-text" placeholder="TU MENSAJE AQUI..."></textarea>
+                    <div id="send-btn-container">
+                        <button id="send-btn" type="button" data-bs-toggle="modal" data-bs-target="#modalSuccessMessage">ENVIAR<img src="avion.png" alt=""></button>
+                    </div>
+                    <div class="modal fade" id="modalSuccessMessage" tabindex="-1" aria-labelledby="ModalSuccessMessageLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg">
+                            <div class="img-success-modal">
+                                <img src="success.png" alt="" class="rounded">
+                            </div>
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                </div>
+                                <div class="modal-body">
+                                    <h4>¡Gracias por comunicarte!</h4>
+                                    <p>Tu mensaje a sido enviado con éxito y recibiras mi respuesta pronto, por favor revisa tu correo electronico</p>
+                                    <h6>Muchas gracias...</h6>
+                                </div>
+                                <div class="modal-footer d-block">
+                                    <button type="button" id="success-btn-modal" class="btn" data-bs-dismiss="modal">Aceptar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+ 
+        <!--
+        <div class="paper">
+            <form class="paper-content">
+                <label>MAIL DE CONTACTO: </label><input type="text" id="contact" name="contact-text">
+                <label>MENSAJE: </label><textarea type="text" rows="5" id="message" name="message-text"></textarea>
                 <input id="send-btn" type="button" value="Enviar" data-bs-toggle="modal" data-bs-target="#modalSuccessMessage">
                 <div class="modal fade" id="modalSuccessMessage" tabindex="-1" aria-labelledby="ModalSuccessMessageLabel" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered modal-lg">
@@ -509,5 +543,6 @@
                 </div>
             </form>
         </div>
+        -->
     </body>
 </html>
