@@ -1,5 +1,5 @@
-/*@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 @import url(https://fonts.googleapis.com/css?family=Handlee);
@@ -11,6 +11,10 @@
     --ligthblue-bg-color: #b2dafa;
     --principal-bg-color: #252440;
     --body-bg-color: #c0beb2;
+    /*--letra-1: 'Great Vibes', cursive !important;  
+    --letra-2: 'Dancing Script', cursive !important;
+    --letra-3: 'Handlee', cursive !important;
+    --letra-4: 'Raleway', sans-serif !important;*/
 }
 
 
@@ -167,6 +171,34 @@ body{
     color: #35F;
 }
 
+#skills-grid-container .modal .modal-content{ 
+    background-image: url(skill-card.png);
+    background-size: 100% 100%;
+    padding: 50px 50px;
+    background-color: #0000 !important;
+    border: none !important;
+    filter: drop-shadow(-2px 2px 15px rgba(0, 0, 0, 0.7));
+}
+
+#skills-grid-container .modal .modal-content .modal-header{ 
+    padding: 0 !important;
+}
+
+
+#skills-grid-container .modal .modal-content .modal-body .col-8{ 
+    position: relative;
+}
+
+#skills-grid-container .modal .modal-content .modal-body .col-8 p{ 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-decoration: underline;
+    text-decoration-color: #b5b292;
+}
+
 .skill-img-container img{
     object-fit: contain;
 }
@@ -181,10 +213,27 @@ body{
     height: 90%;
 }
 
+#carousel-project-1{
+    margin-bottom: 60px;
+}
+
 .carousel-project-1-btn{
-    height: 50px;
+    height: 5vw !important;
     position: static !important;
     display: inline-block !important;
+    width: 5vw !important;
+    opacity: 1 !important;
+    margin: 30px 0;
+}
+
+
+.carousel-control-prev{
+    background-image: url(arrow.png) !important;
+    background-size: 100% 100% !important;
+}
+.carousel-control-next{
+    background-image: url(arrow2.png) !important;
+    background-size: 100% 100% !important;
 }
 
 .card-body input{
@@ -239,6 +288,18 @@ body{
 .focus-none:focus{
     box-shadow: 0 0 0 .25rem rgba(13,110,253,0) !important;
 }
+
+
+.project-skill-img-container{
+    background-color: #0000 !important;
+    border: none !important;
+}
+
+.project-skill-img-container .card-body{
+    white-space: nowrap;
+    padding: 1rem 0 !important;
+}
+
 
 #projects{
     position: relative;
