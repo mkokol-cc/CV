@@ -187,6 +187,7 @@ body{
 
 #skills-grid-container .modal .modal-content .modal-body .col-8{ 
     position: relative;
+    overflow-y: scroll;
 }
 
 #skills-grid-container .modal .modal-content .modal-body .col-8 p{ 
