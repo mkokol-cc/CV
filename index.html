@@ -2,73 +2,564 @@
 <html>
     <head>
         <title>BIENVENIDO</title>
+        <link href="style.css" rel="stylesheet">
+        <link href="mobile.css" rel="stylesheet">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="script.js"></script>
+        <script>
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                return new bootstrap.Tooltip(tooltipTriggerEl)
+            })
+        </script>
     </head>
     <body>
-        <div id="header">
-            <div id="div-img-header">
-                <img src="" alt="">
-            </div>
-            <h1>Mi CV (Presentacion)</h1>
-        </div>
-        <div id="about-me">
-            <h3>Sobre mi.</h3>
-            <p id="description"></p>
-        </div>
-        <div id="skills">
-            <p>mis habilidades.</p>
-            <div id="skills-grid-container">
-                <div id="py" class="skill-item">
-                    <div class="skill-img-container"><img src="" alt=""></div>
-                    <label for="" class="skill-title"></label>
-                </div>
-                <div id="py" class="skill-item">
-                    <div class="skill-img-container"><img src="" alt=""></div>
-                    <label for="" class="skill-title"></label>
-                </div>
-                <div id="py" class="skill-item">
-                    <div class="skill-img-container"><img src="" alt=""></div>
-                    <label for="" class="skill-title"></label>
-                </div>
-                <div id="py" class="skill-item">
-                    <div class="skill-img-container"><img src="" alt=""></div>
-                    <label for="" class="skill-title"></label>
-                </div>
-                <div id="py" class="skill-item">
-                    <div class="skill-img-container"><img src="" alt=""></div>
-                    <label for="" class="skill-title"></label>
-                </div>
-                <div id="py" class="skill-item">
-                    <div class="skill-img-container"><img src="" alt=""></div>
-                    <label for="" class="skill-title"></label>
-                </div>
-                <div id="py" class="skill-item">
-                    <div class="skill-img-container"><img src="" alt=""></div>
-                    <label for="" class="skill-title"></label>
-                </div>
-                <div id="py" class="skill-item">
-                    <div class="skill-img-container"><img src="" alt=""></div>
-                    <label for="" class="skill-title"></label>
-                </div>
+        <div id="header" class="container-fluid text-center row justify-content-center align-items-end">
+            <hr id="hr-head">
+            <div id="image-profile" class="rounded">
+                <img class="rounded h-100 w-100" src="profile.png" alt="">
             </div>
         </div>
-        <div id="projects">
-            <p>mis proyectos.</p>
-            <div id="project-1" class="project-item">
-                <div class="project-preview"></div>
-                <div class="project-description">
-                    <h2 class="project-description-title"></h2>
-                    <p class="project-description-text"></p>
-                    <div class="project-description-skills"></div>
+        <div id="about-me" class="container-fluid text-center">
+            <div class="grid-container text-center mt-4 p-5" id="grid-about-me">
+                <h2>PROGRAMADOR Y DESARROLLADOR WEB FULL-STACK</h2>
+                <div class="row g-2 justify-content-center" id="social-div">
+                    <a href="" class="justify-content-center col-2" id="card1-link"><div class="m-auto social-card" id="social-card1"></div></a>
+                    <a href="" class="justify-content-center col-2" id="card2-link"><div class="m-auto social-card" id="social-card2"></div></a>
+                    <a href="" class="justify-content-center col-2" id="card3-link"><div class="m-auto social-card" id="social-card3"></div></a>
+                    <a href="" class="justify-content-center col-2" id="card4-link"><div class="m-auto social-card" id="social-card4"></div></a>
+                </div>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <h3>Sobre mi</h3>
+                                    </div>
+                                    <div class="col-9">
+                                        <p id="description">
+                                            estudiante avanzado de ing en sistemas apasionado y 
+                                            ambicioso por la programacion, autodidacta y con 
+                                            conocimientos en múltiples lenguajes de programación 
+                                            para el desarrollo tanto de aplicaciones web
+                                            como aplicaciones desktop y en la planificacion y
+                                            gestion de procesos de desarrollo de software
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-3">
+                                        <h3>Habilidades</h3>
+                                    </div>
+                                    <div class="col-9">
+                                        <ul id="description">
+                                            <li>- SEO para posicionamiento web</li>
+                                            tecnicas enfocadas en optimizar un sitio web con el fin de mejorar su posicionamiento en la 
+                                            lista de resultados de los buscadores de internet.
+                                            <li>- Gestión de sitios web y hosting.</li>
+                                            Alojamiento del sitio web con su administracion, configuraciones y manejo de sus bases de datos
+                                            y aplicaciones necesarias para su correcto funcionamiento.
+                                            <li>- Gestión de proyectos con GIT</li>
+                                            manejo del software GIT para el control de versiones de un proyecto, apoyo en el seguimiento de los cambios de código y
+                                            llevar registro de los cambios para coordinar el trabajo entre varias personas
+                                            <li>- Creación de página web con WordPress - wordpress para e-commerce</li>
+                                            utilizacion de la herramienta WordPress para realizar sitios optimizados para SEO, con diseños atractivos y adaptacion a distintos dispositivos
+                                            y uso de plugins como WooCommerce para sitios e-commerce.
+                                            <li>- Programación Orientada a Objetos (POO)</li>
+                                            Aplicacion del paradigma orientado a objetos para la realizacion de un codigo organizado, flexible ante los cambios y facilitar su reutilizazcion
+                                            <li>- Patrones de diseño y análisis de software</li>
+                                            Uso de soluciones probadas a problemas comunes relacionados al diseño y analisis para lograr un software solido y menos propenso a errores
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed m-auto w-auto focus-none" id="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Leer más
+                            </button>
+                        </h2>
+                    </div>  
                 </div>
             </div>
         </div>
+        <div id="skills" class="container-fluid container text-center pad2">
+            <div id="skills-title">
+            </div>
+            <div class="row row-cols-3 row-cols-lg-5 g-2 g-lg-3 justify-content-center" id="skills-grid-container">
+                <div id="py" class="col skill-item">
+                    <div class="skill-img-container card w-100" data-bs-toggle="modal" data-bs-target="#modalPy">
+                        <img class="card-img-top w-100" src="python.png" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title skill-title">Python</h4>
+                            <input type="button" value="ver más" class="btn focus-none">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="modalPy" tabindex="-1" aria-labelledby="ModalPyLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body fluid-container row">
+                                <div class="col-4">
+                                    <div class="skill-img-container card w-100">
+                                        <img class="card-img-top w-100" src="python.png" alt="">
+                                        <div class="card-body">
+                                            <h4 class="card-title skill-title">Python</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <p>
+                                        Python es un lenguaje popular de programación de alto nivel, orientado
+                                        a objetos, usado para el desarrollo web y de aplicaciones informáticas, 
+                                        ciencia de datos, aprendizaje automático, análisis y automatización de 
+                                        datos e Inteligencia artificial. soporta el uso de módulos
+                                        y paquetes para un código puede ser reutilizado en varios proyectos.
+                                        es un lenguaje de programación flexible con librerías, las cuales son 
+                                        conjunto de implementaciones funcionales que ofrecen una interfaz bien 
+                                        definida para la funcionalidad que se invoca.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="java" class="col skill-item">
+                    <div class="skill-img-container card w-100" data-bs-toggle="modal" data-bs-target="#modalJava">
+                        <img class="card-img-top w-100" src="java.png" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title skill-title">Java</h4>
+                            <input type="button" value="ver más" class="btn focus-none">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="modalJava" tabindex="-1" aria-labelledby="ModalJavaLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body fluid-container row">
+                                <div class="col-4">
+                                    <div class="skill-img-container card w-100">
+                                        <img class="card-img-top w-100" src="java.png" alt="">
+                                        <div class="card-body">
+                                            <h4 class="card-title skill-title">Java</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <p>
+                                        Java se utiliza para desarrollar aplicaciones móviles, aplicaciones web, 
+                                        aplicaciones de escritorio, juegos y mucho más. Java es un lenguaje que 
+                                        funciona en diferentes plataformas (Windows, Mac, Linux, Raspberry Pi, etc.),
+                                        seguro, rápido y potente. Tiene un gran apoyo de la comunidad (decenas de 
+                                        millones de desarrolladores). Java es un lenguaje orientado a objetos que 
+                                        proporciona una estructura clara a los programas y permite reutilizar el código,
+                                        lo que reduce los costos y tiempos de desarrollo.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="vb" class="col skill-item">
+                    <div class="skill-img-container card w-100" data-bs-toggle="modal" data-bs-target="#modalVb">
+                        <img class="card-img-top w-100" src="vbnet.png" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title skill-title">VB.NET</h4>
+                            <input type="button" value="ver más" class="btn focus-none">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="modalVb" tabindex="-1" aria-labelledby="ModalVbLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body fluid-container row">
+                                <div class="col-4">
+                                    <div class="skill-img-container card w-100">
+                                        <img class="card-img-top w-100" src="vbnet.png" alt="">
+                                        <div class="card-body">
+                                            <h4 class="card-title skill-title">VB.NET</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <p>
+                                        Visual Basic .NET (también llamado VB.NET) es un lenguaje de programación orientado a 
+                                        objetos desarrollado por Microsoft. Su uso agiliza y simplifica la creación de 
+                                        aplicaciones .NET, este lenguaje permite crear aplicaciones de escritorio, Web y 
+                                        móviles. Brinda un completo número de características para hacer que el desarrollo 
+                                        de aplicaciones sea realmente rápido. proporciona el entorno de ejecución
+                                        Common Language Runtime (CLR), el cual hace posible aplicaciones sólidas, estables 
+                                        , seguras y mas rapidas ya que libera recursos y se encarga de administrar la memoria.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="php" class="col skill-item">
+                    <div class="skill-img-container card w-100" data-bs-toggle="modal" data-bs-target="#modalPhp">
+                        <img class="card-img-top w-100" src="php.png" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title skill-title">PHP</h4>
+                            <input type="button" value="ver más" class="btn focus-none">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="modalPhp" tabindex="-1" aria-labelledby="ModalPhpLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body fluid-container row">
+                                <div class="col-4">
+                                    <div class="skill-img-container card w-100">
+                                        <img class="card-img-top w-100" src="php.png" alt="">
+                                        <div class="card-body">
+                                            <h4 class="card-title skill-title">PHP</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <p>
+                                        PHP es un lenguaje de secuencias de comandos de servidor y una poderosa herramienta 
+                                        para crear páginas web dinámicas e interactivas. está centrado en la programación de 
+                                        scripts del lado del servidor. Puede generar contenido de página dinámico, puede 
+                                        recopilar datos de formulario, puede administrar datos en su base de datos
+                                        Se ejecuta en varias plataformas (Windows, Linux, Unix, Mac OS X, etc.), es compatible
+                                        con casi todos los servidores que se utilizan hoy en día y soporta una amplia gama 
+                                        de bases de datos. WordPress, el sistema de administración de contenido más popular 
+                                        está hecho con el lenguaje de programación PHP
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="mysql" class="col skill-item">
+                    <div class="skill-img-container card w-100" data-bs-toggle="modal" data-bs-target="#modalMysql">
+                        <img class="card-img-top w-100" src="mysql.png" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title skill-title">MySQL</h4>
+                            <input type="button" value="ver más" class="btn focus-none">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="modalMysql" tabindex="-1" aria-labelledby="ModalMysqlLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body fluid-container row">
+                                <div class="col-4">
+                                    <div class="skill-img-container card w-100">
+                                        <img class="card-img-top w-100" src="mysql.png" alt="">
+                                        <div class="card-body">
+                                            <h4 class="card-title skill-title">MySQL</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <p>
+                                        MySQL es un sistema de gestión de bases de datos relacional lo que le permite tener 
+                                        mayor velocidad y flexibilidad, es de las más populares para entornos de desarrollo 
+                                        web como WordPress, su popularidad como aplicación web está muy ligada a PHP, Grandes 
+                                        sitios web como Facebook, Twitter, etc. utilizan MySQL, las bases de datos en MySQL 
+                                        son muy rápidas, Utilizan varias capas de seguridad, necesitan pocos recursos de CPU
+                                        o RAM y son compatibles con Linux y Windows.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="js" class="col skill-item">
+                    <div class="skill-img-container card w-100" data-bs-toggle="modal" data-bs-target="#modalJs">
+                        <img class="card-img-top w-100" src="js.png" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title skill-title">JavaScript</h4>
+                            <input type="button" value="ver más" class="btn focus-none">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="modalJs" tabindex="-1" aria-labelledby="ModalJsLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body fluid-container row">
+                                <div class="col-4">
+                                    <div class="skill-img-container card w-100">
+                                        <img class="card-img-top w-100" src="js.png" alt="">
+                                        <div class="card-body">
+                                            <h4 class="card-title skill-title">JavaScript</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <p>
+                                        JavaScript es un lenguaje de programación web muy popular, se utiliza principalmente 
+                                        del lado del cliente, implementado como parte de un navegador web permitiendo mejoras 
+                                        en la interfaz de usuario y páginas web dinámica. Es uno de los 3 lenguajes fundamentales 
+                                        para el desarrollo web junto a HTML y CSS, JavaScript se utiliza para programar el 
+                                        comportamiento de las páginas web, todos los navegadores modernos interpretan el código 
+                                        JavaScript integrado en las páginas web. junto con ayuda de otras tecnologías como AJAX 
+                                        puede utilizarse para enviar y recibir información del servidor 
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="html" class="col skill-item">
+                    <div class="skill-img-container card w-100" data-bs-toggle="modal" data-bs-target="#modalHtml">
+                        <img class="card-img-top w-100" src="html.png" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title skill-title">HTML</h4>
+                            <input type="button" value="ver más" class="btn focus-none">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="modalHtml" tabindex="-1" aria-labelledby="ModalHtmlLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body fluid-container row">
+                                <div class="col-4">
+                                    <div class="skill-img-container card w-100">
+                                        <img class="card-img-top w-100" src="html.png" alt="">
+                                        <div class="card-body">
+                                            <h4 class="card-title skill-title">HTML</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <p>
+                                        HTML es el lenguaje de marcado estándar para crear sitios web, es el componente más básico 
+                                        de la Web, su proposito es describir la estructura de una página Web a travez de una 
+                                        serie de elementos. La funcion de un navegador web es leer documentos HTML y mostrarlos 
+                                        correctamente.Este lenguaje nos ofrece una gran adaptabilidad, una estructuración lógica y 
+                                        es fácil de interpretar. generalmente se utilizan otras tecnologías para describir la 
+                                        presentación de una página web como CSS o la funcionalidad y comportamiento con JavaScript
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="css" class="col skill-item">
+                    <div class="skill-img-container card w-100" data-bs-toggle="modal" data-bs-target="#modalCss">
+                        <img class="card-img-top w-100" src="css.png" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title skill-title">CSS</h4>
+                            <input type="button" value="ver más" class="btn focus-none">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="modalCss" tabindex="-1" aria-labelledby="ModalCssLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body fluid-container row">
+                                <div class="col-4">
+                                    <div class="skill-img-container card w-100">
+                                        <img class="card-img-top w-100" src="css.png" alt="">
+                                        <div class="card-body">
+                                            <h4 class="card-title skill-title">CSS</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <p>
+                                        es el lenguaje que usamos para diseñar un documento HTML, CSS describe cómo se deben ser 
+                                    renderizados los elementos de HTML en la pantalla, CSS ahorra mucho trabajo, puede controlar 
+                                    el diseño de varias páginas web a la vez. Su funcion es definir estilos para sus páginas web, 
+                                    incluido el diseño, el diseño y las variaciones en la visualización para diferentes dispositivos 
+                                    y tamaños de pantalla. CSS es utilizado por Bootstrap, que es un framework front-end utilizado 
+                                    para desarrollar aplicaciones web y sitios mobile first, o sea, con un layout que se adapta a 
+                                    la pantalla del dispositivo utilizado por el usuario.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="projects" class="container-fluid text-center">
+            <div id="projects-title">
+            </div>
+            <div id="project-1" class="project-item grid-container text-center mt-4 p-5 row">
+                <div id="carousel-project-1" class="project-preview col carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="proj1-img1.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="proj1-img2.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="proj1-img3.png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev carousel-project-1-btn" type="button" data-bs-target="#carousel-project-1" data-bs-slide="prev">
+                        <!--<span class="carousel-control-prev-icon" aria-hidden="true"></span>-->
+                    </button>
+                    <button class="carousel-control-next carousel-project-1-btn" type="button" data-bs-target="#carousel-project-1" data-bs-slide="next">
+                        <!--<span class="carousel-control-next-icon" aria-hidden="true"></span>-->
+                    </button>
+                </div>
+                <div class="project-description col">
+                    <h2 class="project-description-title">TALLAMAR S.A.</h2>
+                    <p class="project-description-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque voluptas animi delectus dolore consequatur facilis minima quisquam excepturi ullam? Voluptatem facere veritatis accusamus maxime. Omnis sequi necessitatibus minus corporis nihil.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum facilis harum sequi incidunt saepe tempore quod! Maxime quaerat cupiditate placeat quis quia eum nobis eligendi quisquam omnis, eius et sequi!
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque maxime repudiandae praesentium illum ab, facilis excepturi ut aliquid beatae illo repellendus omnis dolore, at tempora, nam harum hic pariatur. Nam?
+                    </p>
+                    <a class="project-description-link" href="tallamarsa.com">tallamarsa.com</a>
+                    <h2 class="project-description-skills-title">Herramientas utilizadas</h2>
+                    <div class="project-description-skills row row-cols-2 row-cols-lg-6 g-2 g-lg-3 justify-content-center">
+                        <div class="col project-skill-item">
+                            <div class="project-skill-img-container card w-100">
+                                <img class="card-img-top w-100" src="python.png" alt="">
+                                <div class="card-body">
+                                    <p class="card-title project-skill-title">Python</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col project-skill-item">
+                            <div class="project-skill-img-container card w-100">
+                                <img class="card-img-top w-100" src="java.png" alt="">
+                                <div class="card-body">
+                                    <p class="card-title project-skill-title">Java</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col project-skill-item">
+                            <div class="project-skill-img-container card w-100">
+                                <img class="card-img-top w-100" src="vbnet.png" alt="">
+                                <div class="card-body">
+                                    <p class="card-title project-skill-title">VB.NET</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col project-skill-item">
+                            <div class="project-skill-img-container card w-100">
+                                <img class="card-img-top w-100" src="php.png" alt="">
+                                <div class="card-body">
+                                    <p class="card-title project-skill-title">PHP</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
         <div id="contact">
-            <h3></h3>
-            <p>contacto.</p>
-            <form action="" id="form-contact">
-                <input type="text">
-                <input type="submit" value="Enviar">
+            <div id="contact-title">
+            </div>
+            <div class="paper">
+                <form class="paper-content">
+                    <label>MAIL DE CONTACTO: </label><input type="text" id="contact-mail" name="contact-text" placeholder="TU MAIL AQUI...">
+                    <label id="msg-lbl">MENSAJE: </label><textarea type="text" rows="6" id="message" name="message-text" placeholder="TU MENSAJE AQUI..."></textarea>
+                    <div id="send-btn-container">
+                        <button id="send-btn" type="button" data-bs-toggle="modal" data-bs-target="#modalSuccessMessage">ENVIAR<img src="avion.png" alt=""></button>
+                    </div>
+                    <div class="modal fade text-center" id="modalSuccessMessage" tabindex="-1" aria-labelledby="ModalSuccessMessageLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg">
+                            <div class="img-success-modal">
+                                <img src="success.png" alt="" class="rounded">
+                            </div>
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                </div>
+                                <div class="modal-body">
+                                    <h4>¡Gracias por comunicarte!</h4>
+                                    <p>Tu mensaje a sido enviado con éxito y recibiras mi respuesta pronto, por favor revisa tu correo electronico</p>
+                                    <h6>Muchas gracias...</h6>
+                                </div>
+                                <div class="modal-footer d-block">
+                                    <button type="button" id="success-btn-modal" class="btn" data-bs-dismiss="modal">Aceptar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+ 
+        <!--
+        <div class="paper">
+            <form class="paper-content">
+                <label>MAIL DE CONTACTO: </label><input type="text" id="contact" name="contact-text">
+                <label>MENSAJE: </label><textarea type="text" rows="5" id="message" name="message-text"></textarea>
+                <input id="send-btn" type="button" value="Enviar" data-bs-toggle="modal" data-bs-target="#modalSuccessMessage">
+                <div class="modal fade" id="modalSuccessMessage" tabindex="-1" aria-labelledby="ModalSuccessMessageLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="img-success-modal">
+                            <img src="success.png" alt="" class="rounded">
+                        </div>
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            </div>
+                            <div class="modal-body">
+                                <h4>¡Gracias por comunicarte!</h4>
+                                <p>Tu mensaje a sido enviado con éxito y recibiras mi respuesta pronto, por favor revisa tu correo electronico</p>
+                                <h6>Muchas gracias...</h6>
+                            </div>
+                            <div class="modal-footer d-block">
+                                <button type="button" id="success-btn-modal" class="btn" data-bs-dismiss="modal">Aceptar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </form>
         </div>
+        -->
     </body>
 </html>
